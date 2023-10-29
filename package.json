@@ -7,9 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "dev": "nodemon server/server.js",
-    "build": "concurrently \"node server/server.js\" \"cd client && npm run build\""
-    
+    "dev": "nodemon server/server.js"
   },
   "keywords": [],
   "author": "",
