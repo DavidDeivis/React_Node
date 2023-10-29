@@ -24,8 +24,12 @@ io.on("connection", (socket)=>{
     })
 })
 
+app.get("/", (req, res)=>{
+    res.send("Welcome");
+})
+
 
 
 server.listen(PORT, ()=>{
-    console.log("Servidor inicializado");
+    console.log("Servidor inicializado en el puerto: " + PORT);
 })
