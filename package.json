@@ -8,12 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
-    "build": "npm run --prefix client build"
+    "build": "concurrently \"node server/server.js\" \"cd client && npm run build\""
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
