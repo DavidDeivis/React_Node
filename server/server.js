@@ -24,8 +24,10 @@ io.on("connection", (socket)=>{
     })
 })
 
+app.use(express.static("client/dist"));
+
 app.get("/", (req, res)=>{
-    res.send("Welcome");
+    
 })
 
 
